@@ -1,0 +1,200 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #shiv {
+    margin-top: 250px;
+    font-size: -300px;
+  }
+  .pic {
+    margin-left: 1px;
+  }
+  #get {
+    margin-top: 20px;
+  }
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .achievement-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .achievement-image-container,
+  .achievement-details {
+    max-width: 100%;
+    width: 100%;
+  }
+  .achievement-image-container {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .work-timeline::before {
+    left: 31px;
+  }
+  .work-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .work-item::before {
+    left: 60px;
+    border: medium solid var(--primary-color-2);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--primary-color-2) transparent transparent;
+  }
+  .work-item-left {
+    left: 0;
+  }
+  .work-item-left::after,
+  .work-item-right::after {
+    left: 15px;
+  }
+  .work-item-right {
+    left: 0%;
+  }
+  .extracurricular-container {
+    padding: 1rem;
+  }
+  .extracurricular-main-title {
+    font-size: 2rem;
+  }
+  .extracurricular-experience-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    height: auto;
+  }
+
+  .project-info {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: auto;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  .achievement-image-container {
+    height: 250px;
+  }
+  .achievement-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .achievement-icon {
+    margin-bottom: 1rem;
+  }
+}
+
+.section__text {
+  margin-top: 50px;
+}

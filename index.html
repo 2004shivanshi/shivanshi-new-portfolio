@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivanshi Portfolio</title>
+    <link rel="icon" href="assets/favicon.png" type="image/jpeg">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Shivanshi Gupta</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work-experience">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#extracurricular">Extra Curricular</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Shivanshi Gupta</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">My Skills</a></li>
+          <li><a href="#work-experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+          <li><a href="#extracurricular" onclick="toggleMenu()">Extra Curricular</a></li>
+          <li><a href="#project-section" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="pic"  src="./assets/gupta.jpeg" alt="shivanshi profile picture" />
+      </div>
+      <div class="section__text" id="shiv">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Shivanshi Gupta</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/ShivanshiGupta_Internship_Resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+          src-dark="./assets/linkedin_dark.png" alt="My LinkedIn profile" class="icon linkedin-icon"
+          onclick="location.href='https://www.linkedin.com/in/shivanshi-gupta-frontend-developer/'" />
+        <img src="./assets/github_light.png" src-light="./assets/github_light.png" src-dark="./assets/github_dark.png"
+          alt="My github profile" class="icon github-icon" onclick="location.href='https://github.com/2004shivanshi'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1" id="get">Get To Know More</p>
+    <h1 class="about-title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/shiv.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience_light.png" src-light="./assets/experience_light.png"
+              src-dark="./assets/experience_dark.png" alt="Experience icon" class="icon" />
+            <h3>1 yr+ Experience</h3>
+            <p> Frontend Developer</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education_light.png" cdd src-light="./assets/education_light.png"
+              src-dark="./assets/education_dark.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.tech<br />Computer Science</p>
+            <p> Pre Final Student </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I'm a web developer and graphic designer with skills in React.js, Next.js, Node.js, Firebase, and more. A
+            hackathon winner, I've worked on 5+ live projects, delivering amazing websites and user experiences with
+            creativity and technology for my clients.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+      alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="achievements">
+    <h1 class="title">My Achievements</h1>
+    <div class="achievements-container">
+      <div class="achievement-content">
+        <div class="achievement-image-container">
+          <img src="/assets/hackathon.jpeg" alt="Hackathon" class="achievement-img">
+        </div>
+        <div class="achievement-details">
+          <div class="achievement-card">
+            <h2 class="experience-sub-title">Professional Milestones</h2>
+            <div class="achievement-list">
+              <div class="achievement-item">
+                <div class="achievement-icon">🥇</div>
+                <div class="achievement-text">
+                  <h3>Hack the Mountain Victories</h3>
+                  <p>As the team leader, I led my team to win the Marwadi University Prize and the TinyMCE Track Prize
+                    at the Hack the Mountain (HTM) hackathon, competing with over 100 teams from across India.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <div class="achievement-icon">⏱️</div>
+                <div class="achievement-text">
+                  <h3>36-Hour Project Success</h3>
+                  <p>We worked hard to create an educational project in just 36 hours and secured a top position in the
+                    offline category.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <div class="achievement-icon">🌟</div>
+                <div class="achievement-text">
+                  <h3>First Hackathon Achievement</h3>
+                  <p>This was my first hackathon, and I am proud to have achieved so much with my team, learning and
+                    growing together.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="project-section">
+    <h2 class="title">My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title">GitHub Profile Fetcher</h3>
+          <p class="project-type">Project Type: APIs-based Web Application</p>
+          <p class="project-description">The GitHub Profile Fetcher is a dynamic web application that allows users to retrieve details of any GitHub account simply by entering a valid GitHub username.</p>
+          <div class="project-links">
+            <a href="https://2004shivanshi.github.io/Github-tool/" class="project-link-1" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/2004shivanshi/Github-tool" class="project-link-2" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title">Skill Sarthi</h3>
+          <p class="project-type">Project Type: Multi-Functional Web Application</p>
+          <p class="project-description">A platform with AI chatbot, resume maker, learning games, TinyMCE editor, and
+            tools for skill development and productivity.</p>
+          <div class="project-links">
+            <a href="https://studybuddy-woad.vercel.app/" class="project-link-1" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/2004shivanshi/Study_Buddy" class="project-link-2" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title">QR Code Generator</h3>
+          <p class="project-type">Project Type: Web Application</p>
+          <p class="project-description">A simple tool that generates QR codes for any given URL. Users can customize
+            the QR code dimensions to suit their needs.</p>
+          <div class="project-links">
+            <a href="https://2004shivanshi.github.io/QR-code-generator/" class="project-link-1" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/2004shivanshi/QR-code-generator" class="project-link-2" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="work-container" id="work-experience">
+    <h2 class="work-title" style="margin-bottom: 20px;">Work Experience</h2>
+    <div class="work-timeline">
+      <div class="work-item work-item-right">
+        <div class="work-content">
+          <h3 class="work-position">Project Manager and Web Dev Intern</h3>
+          <h4 class="work-company">Ganesh Biofuel Industries</h4>
+          <p class="work-date">October 2024 - October 2024</p>
+          <p class="work-location">Maharashtra, India</p>
+          <ul class="work-description">
+            <li>I optimize websites with SEO, HTML, CSS, and JavaScript, improving search rankings and user experience.
+            </li>
+            <li>I focus on on-page SEO, responsive design, and content management for enhanced performance.</li>
+          </ul>
+          <a href="https://biofuel.vercel.app/qualitybio.in/index.html" class="work-link" target="_blank">View
+            Project</a>
+        </div>
+      </div>
+      <div class="work-item work-item-left">
+        <div class="work-content">
+          <h3 class="work-position">Project Lead and Web Developer</h3>
+          <h4 class="work-company">Mittal Alliance</h4>
+          <p class="work-date">September 2024 - October 2024</p>
+          <p class="work-location">Indore, India</p>
+          <ul class="work-description">
+            <li>Improved UI components, fixed bugs, and ensured smooth navigation and performance.</li>
+            <li>Optimized the website for seamless performance across devices, ensuring consistent user experience on
+              both desktop and mobile.</li>
+          </ul>
+          <a href="https://mittalalliance.com/mittal/alliance/index.html" class="work-link" target="_blank">View
+            Project</a>
+        </div>
+      </div>
+      <div class="work-item work-item-right">
+        <div class="work-content">
+          <h3 class="work-position">Junior Web Developer</h3>
+          <h4 class="work-company">Secret Weapon Trading Solution</h4>
+          <p class="work-date">August 2024 - October 2024</p>
+          <p class="work-location">Maharashtra, India</p>
+          <ul class="work-description">
+            <li>Designed and built a fully functional algorithmic trading website using Next.js.</li>
+            <li>Improved search engine visibility by implementing meta tags, structured data, and conducting keyword
+              research.</li>
+          </ul>
+          <a href="https://secret-weapon-mu.vercel.app/" class="work-link" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="work-item work-item-left">
+        <div class="work-content">
+          <h3 class="work-position">Website Developer</h3>
+          <h4 class="work-company">BAD TALKS</h4>
+          <p class="work-date">July 2024 - August 2024</p>
+          <p class="work-location">Indore, India</p>
+          <ul class="work-description">
+            <li>Developed a website for an event where attendees can easily register, buy tickets, and access additional
+              facilities.</li>
+          </ul>
+          <a href="https://bad-talks.iesipsacademystudentclubs.org/" class="work-link" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="work-item work-item-right">
+        <div class="work-content">
+          <h3 class="work-position">Frontend Developer</h3>
+          <h4 class="work-company">Spillmate</h4>
+          <p class="work-date">May 2024 - August 2024</p>
+          <p class="work-location">New Delhi, India</p>
+          <ul class="work-description">
+            <li>Collaborated on Web Development Team: Contributed as a key member of the team responsible for developing
+              and designing the Spillmate website in Next.js.</li>
+            <li>Utilized Git and GitHub for version control, tracking changes, collaboration, and managing code
+              efficiently.</li>
+          </ul>
+          <a href="https://www.spillmate.ai/" class="work-link" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="work-item work-item-left">
+        <div class="work-content">
+          <h3 class="work-position">Frontend Developer Intern</h3>
+          <h4 class="work-company">NGO Muskan</h4>
+          <p class="work-date">March 2023 - May 2023</p>
+          <p class="work-location">New Delhi, India</p>
+          <ul class="work-description">
+            <li>Designed and improved the website's appearance using technologies like HTML, CSS, JavaScript, and React.
+            </li>
+            <li>Checked the site for bugs and fixed them to ensure it runs smoothly everywhere.</li>
+          </ul>
+          <a href="https://www.ngomuskan.com/" class="work-link" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extracurricular-container" id="extracurricular">
+    <h1 class="extracurricular-main-title">Extracurricular Activities</h1>
+    <div class="extracurricular-experience-grid">
+      <div class="extracurricular-experience-card">
+        <div class="extracurricular-experience-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+        </div>
+        <div class="extracurricular-experience-content">
+          <h3 class="extracurricular-experience-title">Web Development Team Lead</h3>
+          <p class="extracurricular-experience-company">GDSC IPS Academy</p>
+          <p class="extracurricular-experience-duration">Nov 2024 - Present</p>
+          <p class="extracurricular-experience-description">Leading the web development team at Google Developer Student
+            Clubs IPS Academy, fostering innovation and technical growth among students.</p>
+          <div class="extracurricular-experience-tags">
+            <span class="extracurricular-tag">Web Development</span>
+            <span class="extracurricular-tag">Team Leadership</span>
+            <span class="extracurricular-tag">GDSC</span>
+          </div>
+        </div>
+      </div>
+      <div class="extracurricular-experience-card">
+        <div class="extracurricular-experience-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z" />
+          </svg>
+        </div>
+        <div class="extracurricular-experience-content">
+          <h3 class="extracurricular-experience-title">Head of Web Development Team</h3>
+          <p class="extracurricular-experience-company">TEDxIPSA Indore</p>
+          <p class="extracurricular-experience-duration">Dec 2024 - Present</p>
+          <p class="extracurricular-experience-description">Leading the web development efforts for TEDxIPSA Indore,
+            ensuring a strong online presence and smooth digital experience for the event.</p>
+          <div class="extracurricular-experience-tags">
+            <span class="extracurricular-tag">Web Development</span>
+            <span class="extracurricular-tag">TEDx</span>
+            <span class="extracurricular-tag">Event Management</span>
+          </div>
+        </div>
+      </div>
+      <div class="extracurricular-experience-card">
+        <div class="extracurricular-experience-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <div class="extracurricular-experience-content">
+          <h3 class="extracurricular-experience-title">Campus Ambassador</h3>
+          <p class="extracurricular-experience-duration">January 2023 - December 2023</p>
+          <p class="extracurricular-experience-description">Served as a Campus ambassador for Physics Wallah SKILLS,
+            promoting skill development and connecting students with learning opportunities.</p>
+          <div class="extracurricular-experience-tags">
+            <span class="extracurricular-tag">Campus Ambassador</span>
+            <span class="extracurricular-tag">Skill Development</span>
+            <span class="extracurricular-tag">Student Engagement</span>
+          </div>
+        </div>
+      </div>
+      <div class="extracurricular-experience-card">
+        <div class="extracurricular-experience-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <div class="extracurricular-experience-content">
+          <h3 class="extracurricular-experience-title">Contributor</h3>
+          <p class="extracurricular-experience-company">GirlScript Summer of Code</p>
+          <p class="extracurricular-experience-duration">Oct 2024 - Oct 2024</p>
+          <p class="extracurricular-experience-description">Participated in the GirlScript Summer of Code program,
+            contributing to open-source projects and enhancing coding skills.</p>
+          <div class="extracurricular-experience-tags">
+            <span class="extracurricular-tag">Open Source</span>
+            <span class="extracurricular-tag">Collaboration</span>
+            <span class="extracurricular-tag">Coding</span>
+          </div>
+        </div>
+      </div>
+      <div class="extracurricular-experience-card">
+        <div class="extracurricular-experience-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <div class="extracurricular-experience-content">
+          <h3 class="extracurricular-experience-title">LinkedIn Manager</h3>
+          <p class="extracurricular-experience-company">Secret Weapon Trading Solution</p>
+          <p class="extracurricular-experience-duration">Jul 2024 - Oct 2024</p>
+          <p class="extracurricular-experience-description">Managed the LinkedIn company page, handling content
+            creation, design, and strategy to ensure visually engaging posts that align with our brand's goals.</p>
+          <div class="extracurricular-experience-tags">
+            <span class="extracurricular-tag">Content Creation</span>
+            <span class="extracurricular-tag">Social Media Strategy</span>
+            <span class="extracurricular-tag">Brand Management</span>
+          </div>
+        </div>
+      </div>
+      <div class="extracurricular-experience-card">
+        <div class="extracurricular-experience-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+          </svg>
+        </div>
+        <div class="extracurricular-experience-content">
+          <h3 class="extracurricular-experience-title">Technical Content Writer Intern</h3>
+          <p class="extracurricular-experience-company">Sudan's Tech</p>
+          <p class="extracurricular-experience-duration">May 2024 - Oct 2024</p>
+          <p class="extracurricular-experience-description">Wrote content for websites, focusing on web content writing
+            and content development.</p>
+          <div class="extracurricular-experience-tags">
+            <span class="extracurricular-tag">Technical Writing</span>
+            <span class="extracurricular-tag">Web Content</span>
+            <span class="extracurricular-tag">Content Development</span>
+          </div>
+        </div>
+      </div>
+      <div class="extracurricular-experience-card">
+        <div class="extracurricular-experience-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+          </svg>
+        </div>
+        <div class="extracurricular-experience-content">
+          <h3 class="extracurricular-experience-title">Social Media Marketing Intern</h3>
+          <p class="extracurricular-experience-company">Spillmate</p>
+          <p class="extracurricular-experience-duration">Apr 2024 - Jul 2024</p>
+          <p class="extracurricular-experience-description">Managed social media platforms like LinkedIn and Instagram,
+            deciding on content strategy for growth and exploring new strategies to enhance page performance.</p>
+          <div class="extracurricular-experience-tags">
+            <span class="extracurricular-tag">Social Media Management</span>
+            <span class="extracurricular-tag">Content Strategy</span>
+            <span class="extracurricular-tag">Performance Analysis</span>
+          </div>
+        </div>
+      </div>
+      <div class="extracurricular-experience-card">
+        <div class="extracurricular-experience-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+        <div class="extracurricular-experience-content">
+          <h3 class="extracurricular-experience-title">SEO Content Writer</h3>
+          <p class="extracurricular-experience-company">Socio Labs</p>
+          <p class="extracurricular-experience-duration">Apr 2024 - May 2024</p>
+          <p class="extracurricular-experience-description">Worked as an SEO content writer, creating optimized content
+            to improve search engine rankings and visibility.</p>
+          <div class="extracurricular-experience-tags">
+            <span class="extracurricular-tag">SEO</span>
+            <span class="extracurricular-tag">Content Writing</span>
+            <span class="extracurricular-tag">Keyword Optimization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="experience">
+    <p class="section__text__p1"> Explore </p>
+    <h1 class="skill-title">My Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Advance</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS, Tailwind</h3>
+                <p>Advance</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React.js</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Next.js</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Firebase</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Shadcn/UI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SEO Optimization</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git Github</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Other Skills
+          </h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PR Head</h3>
+                <p>IPS IES Tech Club</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Contributor </h3>
+                <p>GSSoC</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tech Core Member</h3>
+                <p>Student Alliance Club</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Campus Ambassador</h3>
+                <p>Physics Wallah</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Wix Studio</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Shopify</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Technical Content Writter</h3>
+                <p> Sudan's Tech</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+      alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="contact-title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email_light.png" src-light="./assets/email_light.png" src-dark="./assets/email_dark.png"
+          alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:guptashivanshi250@gmail.com">guptashivanshi250@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+          src-dark="./assets/linkedin_dark.png" alt="My LinkedIn profile" class="icon linkedin-icon"
+          onclick="location.href='https://www.linkedin.com/in/shivanshi-gupta-frontend-developer/'" />
+        <p><a href="https://www.linkedin.com/in/shivanshi-gupta-frontend-developer/">linkdein</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">My Skills</a></li>
+          <li><a href="#work-experience">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#extracurricular">Extra Curricular</a></li>
+          <li><a href="#project-section">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Shivanshi Gupta. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
