@@ -63,6 +63,15 @@
   .achievement-image-container {
     height: 400px;
   }
+
+  .portfolio-footer {
+    padding: 3rem 2rem;
+  }
+
+  .portfolio-nav-links-container,
+  .portfolio-footer p {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -132,11 +141,26 @@
   .project-info {
     height: auto;
   }
+
+  .portfolio-footer {
+    padding: 2.5rem 2rem;
+  }
+
+  .portfolio-nav-links {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .portfolio-nav-links a {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
+  #contact {
     height: 40vh;
   }
   #profile {
@@ -192,6 +216,20 @@
   }
   .achievement-icon {
     margin-bottom: 1rem;
+  }
+  .about-title::after,.skill-title::after,.contact-title::after,.work-title::after,.extracurricular-main-title::after {
+    content: none;
+  }
+  .portfolio-footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .portfolio-nav-links {
+    gap: 0.875rem;
+  }
+
+  .portfolio-nav-links a {
+    font-size: 0.875rem;
   }
 }
 
